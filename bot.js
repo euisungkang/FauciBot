@@ -11,15 +11,15 @@ client.on('message', message => {
     let channel = client.channels.get(channelID);
 
     if (message.content === 'ping') {
-       channel.send('pong');
+       message.channel.send('pong');
     }
     
     if (message.content === 'pong') {
-        channel.send('ping');
+        message.channel.send('ping');
     }
 
     if (message.content === '!introduce') {
-        channel.send('Wear a Mask, Stay Safe')
+        message.channel.send('Wear a Mask, Stay Safe')
     }
 
 });

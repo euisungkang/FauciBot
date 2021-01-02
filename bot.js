@@ -9,13 +9,13 @@ const channelID = process.env.CHANNEL_ID
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content == '!ping') {
        message.channel.send('pong');
     }
-    else if (message.content === 'pong') {
+    else if (message.content == '!pong') {
         message.channel.send('ping');
     }
-    else if (message.content === '!introduce') {
+    else if (message.content == '!introduce') {
         message.channel.send('Wear a Mask, Stay Safe')
     }
 

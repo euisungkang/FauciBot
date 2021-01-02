@@ -8,15 +8,15 @@ client.on('ready', () => {
 client.on('message', message => {
 
     if (message.content === 'ping') {
-       message.reply('pong');
+       message.send('pong');
     }
     
     if (message.content === 'pong') {
-        message.reply('ping');
+        message.send('ping');
     }
 
     if (message.content === '!introduce') {
-        message.reply('Wear a Mask, Stay Safe')
+        message.send('Wear a Mask, Stay Safe')
     }
 
 });
